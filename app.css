@@ -55,7 +55,7 @@ form > :first-child {
 }
 
 form > :last-child {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 form div {
@@ -105,4 +105,22 @@ input[type="submit"]:hover {
 
 input[type="submit"]:focus {
   border: 1px solid rgb(160,160,160);
+}
+
+.errors {
+  height: 0px;
+  font-size: 0.8em;
+  color: red;
+  align-items: center;
+  justify-content: center;
+}
+
+.errors:empty, .response:empty {
+  display: none;
+}
+
+.response {
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 15px;
 }
