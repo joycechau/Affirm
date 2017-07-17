@@ -31,6 +31,7 @@ class App extends React.Component {
         onSubmit={this.handleSubmit}
         className="form"
       >
+        <span><strong>Enter your credit card information</strong></span>
         <input
           type="text"
           placeholder="Name"
@@ -63,10 +64,7 @@ class App extends React.Component {
             onChange={this.update("expYear")}
           />
         </div>
-        <div>
-          <img/>
-          <img/>
-        </div>
+        <img src="./assets/cards.png" alt="Credit Cards"/>
         <input
           type="submit"
           value="Submit"
